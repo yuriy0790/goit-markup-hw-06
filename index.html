@@ -496,13 +496,15 @@
             placeholder="SVG"
           />
           <label class="contact-label" for="contact-comment">Коментар </label>
-          <input
+          <textarea
+            cols="30"
+            rows="5"
             class="contact-comment-input"
-            type="text"
+            type="textarea"
             name="contact-comment"
             id="contact-comment"
             placeholder="Введіть текст"
-          />
+          ></textarea>
 
           <input
             class="contact-policy"
@@ -511,7 +513,8 @@
             id="policy"
           />
           <label class="contact-checkbox-label" for="policy"
-            >Погоджуюся з розсилкою та приймаю Умови договору
+            >Погоджуюся з розсилкою та приймаю
+            <a class="policy-link" href="">Умови договору</a>
           </label>
           <button class="contact-button cursor-pointer" type="submit">
             Підписатися

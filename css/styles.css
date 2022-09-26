@@ -632,8 +632,15 @@ body {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
   background-color: var(--primary-background-color);
-  /* color: rgba(255, 255, 255, 0.6); */
+}
+.signup-email-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 .signup-email-button {
   width: 200px;
@@ -763,7 +770,9 @@ body {
   line-height: 1.71;
   color: var(--primary-text-color);
 }
-
+.policy-link {
+  color: var(--accent-color);
+}
 .contact-button {
   width: 200px;
   height: 50px;
