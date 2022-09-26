@@ -462,6 +462,61 @@
             <use href="./images/sprite.svg#x-icon"></use>
           </svg>
         </button>
+        <h2 class="contact-form-header">
+          Залиште свої дані, ми вам передзвонимо
+        </h2>
+        <form
+          class="contact-form"
+          name="contact-form"
+          autocomplete="on"
+          novalidate
+        >
+          <label class="contact-label" for="contact-name">Ім'я </label>
+          <input
+            class="contact-input"
+            type="text"
+            name="contact-name"
+            id="contact-name"
+            placeholder="SVG"
+          />
+          <label class="contact-label" for="contact-tel">Телефон </label>
+          <input
+            class="contact-input"
+            type="tel"
+            name="contact-tel"
+            id="contact-tel"
+            placeholder="SVG"
+          />
+          <label class="contact-label" for="contact-email">Пошта </label>
+          <input
+            class="contact-input"
+            type="email"
+            name="contact-email"
+            id="contact-email"
+            placeholder="SVG"
+          />
+          <label class="contact-label" for="contact-comment">Коментар </label>
+          <input
+            class="contact-comment-input"
+            type="text"
+            name="contact-comment"
+            id="contact-comment"
+            placeholder="Введіть текст"
+          />
+
+          <input
+            class="contact-policy"
+            type="checkbox"
+            name="policy"
+            id="policy"
+          />
+          <label class="contact-checkbox-label" for="policy"
+            >Погоджуюся з розсилкою та приймаю Умови договору
+          </label>
+          <button class="contact-button cursor-pointer" type="submit">
+            Підписатися
+          </button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
