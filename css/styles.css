@@ -791,11 +791,50 @@ body {
 
   color: rgba(117, 117, 117, 0.5);
 }
+.contact-form-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: var(--title-primary-text-color);
+  transition: fill 250ms var(--time-function);
+}
+.contact-input:hover + .contact-form-icon,
+.contact-input:not(:placeholder-shown) + .contact-form-icon,
+.contact-input:focus + .contact-form-icon {
+  fill: var(--accent-color);
+}
+.contact-comment-input:focus,
+.contact-comment-input:hover,
+.contact-comment-input:not(:placeholder-shown),
+.contact-input:hover,
+.contact-input:focus,
+.contact-input:not(:placeholder-shown) {
+  border-color: var(--accent-color);
+  outline-color: var(--accent-color);
+}
 
 .contact-form input[type="checkbox"] {
-  width: 16px;
-  height: 15px;
+  /* appearance: none; */
+}
+.check-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(./images/sprite.svg#email-black);
   margin-right: 7px;
+  border: 2px solid var(--title-primary-text-color);
+  border-radius: 2px;
+}
+.contact-policy:checked + .check-icon {
+  background-image: url(./images/ihor.jpg);
+  background-color: #757575;
+
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
 }
 .contact-checkbox-label {
   font-weight: 400;
@@ -806,6 +845,7 @@ body {
 .policy-link {
   color: var(--accent-color);
 }
+
 .contact-button {
   width: 200px;
   height: 50px;
@@ -830,28 +870,4 @@ body {
 
 .contact-button:hover {
   background: #188ce8;
-}
-.contact-form-icon {
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-  fill: var(--title-primary-text-color);
-  transition: fill 250ms var(--time-function);
-}
-.contact-input:hover + .contact-form-icon,
-.contact-input:not(:placeholder-shown) + .contact-form-icon,
-.contact-input:focus + .contact-form-icon {
-  fill: var(--accent-color);
-}
-.contact-comment-input:focus,
-.contact-comment-input:hover,
-.contact-comment-input:not(:placeholder-shown),
-.contact-input:hover,
-.contact-input:focus,
-.contact-input:not(:placeholder-shown) {
-  border-color: var(--accent-color);
-  outline-color: var(--accent-color);
 }
