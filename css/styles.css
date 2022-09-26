@@ -654,6 +654,9 @@ body {
 
   color: var(--title-secondary-text-color);
 }
+.signup-email-button:hover {
+  background: #188ce8;
+}
 .signup-telegram-icon {
   height: 24px;
   width: 24px;
